@@ -1,0 +1,16 @@
+.input {
+  font-size: 1em;
+  padding: 0.5em;
+  margin: 0.5em;
+  border-radius: 10px;
+}
+
+.input--large {
+  font-size: 2em;
+}
+.input--medium {
+  font-size: 1.5em;
+}
+.input--small {
+  font-size: 0.75em;
+}
