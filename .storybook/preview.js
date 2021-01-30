@@ -1,3 +1,6 @@
+// Just To add Global Wrapper
+import GlobaStyles from "../src/components/particles/GlobalStyles.jsx"
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   
@@ -9,3 +12,5 @@ export const parameters = {
         : a[1].id.localeCompare(b[1].id, undefined, { numeric: true }),
   },
 };
+
+

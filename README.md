@@ -1,3 +1,22 @@
+# Refrence To ATOMIC DESIGN by BRAD FORST IN 2013
+
+## Atoms
+
+## Molecules
+
+## organisms
+
+## Templates
+
+## Pages
+
+
+## Particles - Just withWraper Functions or Utils for Atomic Design Principle not part of whole structure
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

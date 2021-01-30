@@ -6,6 +6,8 @@ export default {
   component: Button,
 };
 
+const Template = (args) => <Button variant="" {...args} />;
+
 // ADD VARIANTS OF STORIES INTO STORYBOOK
 export const Primary = () => (
   <Button variant="primary">Primary btn New </Button>
@@ -23,11 +25,10 @@ Primary.storyName = "Main Form";
 
 // USING ARGS
 
-const Template = (args) => <Button {...args} />;
-
 export const largeTemplate = Template.bind({});
 
 largeTemplate.args = {
-  variant: "primary",
+  // variant: "",
   children: "Large",
+  style: { color: "orange", padding: "2em" },
 };
