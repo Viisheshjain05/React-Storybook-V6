@@ -5,10 +5,7 @@ const StyledNavigation = styled.nav({
   padding: "24px",
   flexDirection: (props) =>
     props.direction === "horizontal" ? "column" : "row",
-  //   backgroundColor: "lightBlue",
   marginLeft: "10px",
-  //   *+*{
-  //   }
 });
 
 export default StyledNavigation;

@@ -1,27 +1,23 @@
 {
     "component": "Navigation",
     "items": {
-        "options": 
+        "options": [
+            {
+                "url": "#",
+                "children": "feature"
+            },
+            {
+                "url": "#",
+                "children": "aboutus"
+            },
+            {
+                "url": "#",
+                "children": "resources"
+            },
             {
                 "url": "#",
                 "children": "home"
             }
-        
-    },
-    "extraOptions": [
-        {
-            "url": "#",
-            "children": "feature"
-        },
-        {
-            "url": "#",
-            "children": "aboutus"
-        },
-        {
-            "url": "#",
-            "children": "resources"
-        }
-    ]
+        ]
+    }
 }
-
-

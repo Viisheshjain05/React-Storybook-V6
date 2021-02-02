@@ -14,23 +14,30 @@ export default {
         options: ["verticle", "horizontal"],
       },
     },
-    count: { control: { type: "number", min: 0, max: 10 } },
-    items: "array",
+    // count: { control: { type: "number", min: 0, max: 10 } },
   },
 };
-
-export const HorizontalNav = () => <Navigation />;
-export const Nav = () => <Navigation> </Navigation>;
 
 const Template = (args) => <Navigation {...args}></Navigation>;
 
 export const Vertical = Template.bind({});
 Vertical.args = {
   direction: "horizontal",
-  items: items.options,
+  items: items.options[0],
   count: 2,
+  btnStyle: { color: "black", fontSize: "1.2em" },
+  btnVariant: "link",
+};
+Vertical.storyName = "Create Custom Navigation";
+
+export const PrimaryNavigation = Template.bind({});
+PrimaryNavigation.args = {
+  direction: "verticle",
+  items: items.options,
+  btnVariant: "link",
 };
 
+// Button Variant of Todoist Navbar
 // return (
 //   <>
 //     <div style={{ display: "flex", justifyContent: "space-around" }}>

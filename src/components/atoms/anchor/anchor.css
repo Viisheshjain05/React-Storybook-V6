@@ -1,4 +1,7 @@
-.btn__group {
+a {
+  text-decoration: none;
+}
+.a__group {
   display: inline-flex;
   font-family: inherit;
   font-size: 1em;
@@ -10,16 +13,12 @@
   border-bottom: 3px solid transparent;
 }
 
-.btn {
+.a {
   font-size: 1.2em;
   border: none;
-  cursor: inherit;
-
-  /* In Case of overflow flex
-  flex-shrink: 1; */
 }
 
-.btn__icon {
+.a__icon {
   height: 2em;
   width: 2em;
   box-shadow: none;
@@ -27,42 +26,25 @@
 }
 
 /* Button Link */
-.btn-link {
+.a-link {
   background-color: transparent;
   color: rgb(12, 12, 12);
 }
 
-.btn-link:focus {
+.a-link:focus {
   outline: none;
 }
 
-.btn__group-link:hover,
-.btn__group-link:active {
+.a__group-link:hover,
+.a__group-link:active {
   background-color: rgb(252, 240, 240);
   border-bottom: 3px solid red;
 }
 
-/* Extras */
-
-.btn__group-primary,
-.btn-primary {
-  background-color: palegoldenrod;
-}
-
-.btn__group-secondary,
-.btn-secondary {
-  background-color: greenyellow;
-}
-
-.btn__group-tersiary,
-.btn-tersiary {
-  background-color: orangered;
-}
-
 /* custom Variant */
 
-.btn__group-custom,
-.btn-custom {
+.a__group-custom,
+.a-custom {
   background-color: transparent;
   padding: 0;
   margin: 0;
