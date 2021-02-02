@@ -1,0 +1,69 @@
+.btn__group {
+  display: inline-flex;
+  font-family: inherit;
+  font-size: 1em;
+  color: black;
+  margin: 0.5em;
+  padding: 0.2em 0.3em;
+  border: none;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+}
+
+.btn {
+  font-size: 1.2em;
+  border: none;
+  cursor: inherit;
+
+  /* In Case of overflow flex
+  flex-shrink: 1; */
+}
+
+.btn__icon {
+  height: 2em;
+  width: 2em;
+  box-shadow: none;
+  align-self: center;
+}
+
+/* Button Link */
+.btn-link {
+  background-color: transparent;
+  color: rgb(12, 12, 12);
+}
+
+.btn-link:focus {
+  outline: none;
+}
+
+.btn__group-link:hover,
+.btn__group-link:active {
+  background-color: rgb(252, 240, 240);
+  border-bottom: 3px solid red;
+}
+
+/* Extras */
+
+.btn__group-primary,
+.btn-primary {
+  background-color: palegoldenrod;
+}
+
+.btn__group-secondary,
+.btn-secondary {
+  background-color: greenyellow;
+}
+
+.btn__group-tersiary,
+.btn-tersiary {
+  background-color: orangered;
+}
+
+/* custom Variant */
+
+.btn__group-custom,
+.btn-custom {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}

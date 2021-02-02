@@ -1,0 +1,27 @@
+{
+    "component": "Navigation",
+    "items": {
+        "options": 
+            {
+                "url": "#",
+                "children": "home"
+            }
+        
+    },
+    "extraOptions": [
+        {
+            "url": "#",
+            "children": "feature"
+        },
+        {
+            "url": "#",
+            "children": "aboutus"
+        },
+        {
+            "url": "#",
+            "children": "resources"
+        }
+    ]
+}
+
+

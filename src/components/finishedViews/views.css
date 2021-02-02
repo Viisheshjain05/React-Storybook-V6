@@ -1,0 +1,9 @@
+.views {
+  color: blue;
+  width: 100%;
+}
+img {
+  width: inherit;
+  height: auto;
+  box-shadow: 1px 1px 4px 0px black;
+}
