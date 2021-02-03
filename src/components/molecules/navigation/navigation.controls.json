@@ -1,5 +1,11 @@
 {
     "component": "Navigation",
+    "direction": {
+        "options": [
+            "horizontal",
+            "vertical"
+        ]
+    },
     "items": {
         "options": [
             {

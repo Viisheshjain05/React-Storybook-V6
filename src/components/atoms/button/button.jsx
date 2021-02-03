@@ -1,8 +1,12 @@
+// Todo
+// Remove Flex From Single Button Rendering 
+// Create Diffent Components For [Anchor Tag, ...rest] or any other relevent tag do not mix in Button
+
 import React from "react";
 import "./button.css";
 
 // import { node, func, oneOf, object, string } from "prop-types";
-import prty from "prop-types";
+import PropTypes from "prop-types";
 
 const Button = (props) => {
   const { variant = "primary", children, icon, style, ...rest } = props;
@@ -26,11 +30,11 @@ const Button = (props) => {
 };
 
 Button.propTypes = {
-  variant: prty.oneOf(["primary", "secondary", "tersiary", "link", "custom"]),
-  children: prty.node,
-  onClick: prty.func,
-  style: prty.object,
-  icon: prty.string,
+  variant: PropTypes.oneOf(["primary", "secondary", "tersiary", "link", "custom"]),
+  children: PropTypes.node,
+  onClick: PropTypes.func,
+  style: PropTypes.object,
+  icon: PropTypes.string,
 };
 
 Button.defaultProps = {

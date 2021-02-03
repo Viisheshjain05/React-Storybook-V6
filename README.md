@@ -1,17 +1,41 @@
-# Refrence To ATOMIC DESIGN by BRAD FORST IN 2013
+## Refrence To ATOMIC DESIGN by BRAD FORST IN 2013
 
-## Atoms
+### Atoms
 
-## Molecules
+### Molecules
 
-## organisms
+### organisms
 
-## Templates
+### Templates
 
-## Pages
+### Pages
 
 
-## Particles - Just withWraper Functions or Utils for Atomic Design Principle not part of whole structure
+### Particles - Just withWraper Functions or Utils for Atomic Design Principle not part of whole structure
+
+
+# Git Commands 
+
+## git config --list --show-origin
+
+### Shows all the locations of .gitconfig files in global directories
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

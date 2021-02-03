@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const styledFooter = styled.div({
+export const StyledFooter = styled.div({
   padding: "2em",
   backgroundColor: "lightblue",
 });

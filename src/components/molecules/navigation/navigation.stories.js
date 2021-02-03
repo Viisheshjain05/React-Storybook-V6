@@ -14,7 +14,6 @@ export default {
         options: ["verticle", "horizontal"],
       },
     },
-    // count: { control: { type: "number", min: 0, max: 10 } },
   },
 };
 

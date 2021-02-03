@@ -1,7 +1,7 @@
 import React from "react";
 import "./anchor.css";
 
-import prty from "prop-types";
+import PropTypes from "prop-types";
 
 const Anchor = (props) => {
   const { variant = "primary", children, icon, style, herf, ...rest } = props;
@@ -21,11 +21,11 @@ const Anchor = (props) => {
 };
 
 Anchor.propTypes = {
-  variant: prty.oneOf(["primary", "secondary", "tersiary", "link", "custom"]),
-  children: prty.node,
-  onClick: prty.func,
-  style: prty.object,
-  icon: prty.string,
+  variant: PropTypes.oneOf([ "link", "custom"]),
+  children: PropTypes.node,
+  onClick: PropTypes.func,
+  style: PropTypes.object,
+  icon: PropTypes.string,
 };
 
 Anchor.defaultProps = {

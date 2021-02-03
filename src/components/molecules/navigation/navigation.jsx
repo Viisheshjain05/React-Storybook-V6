@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../../atoms/button/button.jsx";
 import StyledNavigation from "./navigation.styles.jsx";
-import prty from "prop-types";
+import PropTypes from "prop-types";
 
 // NavigationTesting Component
 const Navigation = (props) => {
@@ -9,6 +9,7 @@ const Navigation = (props) => {
 
   const CountCall = (items) => {
     const itemArr = [];
+    
     for (let i = 0; i < count; i++) {
       itemArr.push(
         <Button key={i} variant={btnVariant} style={btnStyle} href={items.url}>
@@ -17,8 +18,13 @@ const Navigation = (props) => {
       );
     }
     if (count === undefined) {
-      const newItem = items.map((items, index) => (
-        <Button key={index} variant="link" href={items.url}>
+      // Error Checking Start
+      if (typeof(item) != Array) {
+        console.warn("With Single object You Need to add count property or create a array")
+      }
+      // Error Checking End
+        const newItem = items.map((items, index) => (
+          <Button key={index} variant="link" href={items.url}>
           {items.children}
         </Button>
       ));
@@ -39,11 +45,23 @@ const Navigation = (props) => {
 export default Navigation;
 
 Navigation.propTypes = {
-  items: prty.string.isRequired,
-  direction: prty.string.isRequired,
-  count: prty.number,
-  btnStyle: prty.object,
-  btnVariant: prty.string,
+  direction: PropTypes.string.isRequired,
+  btnVariant: PropTypes.string,
+  items: PropTypes.oneOfType([
+    PropTypes.shape({
+      children: PropTypes.string.isRequired,
+      url: PropTypes.string,
+    }),
+
+    PropTypes.arrayOf(
+      PropTypes.shape({
+        children: PropTypes.string.isRequired,
+        url: PropTypes.string,
+      })
+    ),
+  ]),
+  // count: PropTypes.number,
+  // btnStyle: PropTypes.object,
 };
 
 Navigation.defaultProps = {
