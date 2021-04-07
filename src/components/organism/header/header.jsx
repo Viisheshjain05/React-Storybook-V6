@@ -5,7 +5,8 @@ import PropTypes from 'prop-types';
 const header = () => {
     return (
         <div>
-            yo yo
+
+
         </div>
     );
 };
